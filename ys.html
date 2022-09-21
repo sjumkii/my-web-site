@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img id="pic" src="1.PNG">
+    <img id="pic" src="2.">
+    <img id="pic" src="images/preview-2.jpg">
+</body>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+ 
+<script>
+    // $(document).ready(function(){
+    //         /*웹페이지 열었을 때*/
+    //         $("#img1").show();
+    //         $("#img2").hide();
+    //         $("#img3").hide();
+    //         $("#img4").hide();
+    //         $("#img5").hide();
+ 
+    //         /*img1을 클릭했을 때 img2를 보여줌*/
+    //         $("#img1").click(function(){
+    //             $("#img1").hide();
+    //             $("#img2").show();
+    //         });
+ 
+    //         /*img2를 클릭했을 때 img1을 보여줌*/
+    //         $("#img2").click(function(){
+    //             $("#img1").show();
+    //             $("#img2").hide();
+    //         });
+    //     });
+
+    $(function () {
+        let num = 0;
+        let imageName = ["1", "2", "3", "4"];
+        $("#pic").click(function() {
+            if(num == 3) num=0;
+            else num++;	
+            $(this).attr("./"+ imageName[num]+".PNG");
+        });
+    });
+    
+    // $(function() {
+    //     $(".preview").on("click", function() {
+    //         $('#changeMe').prop('src', this.src);
+    //     });
+    // });
+</script>
+ 
+</html>

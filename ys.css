@@ -1,0 +1,7 @@
+img {
+    width: 600px;
+}
+
+img:hover {
+    cursor: url('./cursor.cur'), auto
+}
